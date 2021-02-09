@@ -6,6 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shoppage/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sing-up/sign-in-and-sing-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
@@ -53,7 +54,8 @@ class App extends React.Component {
               currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />
             }
           />
-          <Route exact path='/shop' component={ShopPage} />
+          <Route exact path='/checkout' component={CheckoutPage} />
+          <Route path='/shop' component={ShopPage} />
         </Switch>
       </div>
     );
