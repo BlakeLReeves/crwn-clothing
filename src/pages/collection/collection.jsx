@@ -9,7 +9,6 @@ import {
   CollectionPageContainer,
   CollectionTitle,
   ItemsContainer,
-  ItemContainer,
 } from './collection.styles';
 
 const CollectionPage = ({ collection }) => {
