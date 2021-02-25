@@ -10,6 +10,7 @@ import {
 
 const CollectionPreview = ({ title, items }) => (
   <CollectionPreviewContainer>
+    {/* //TODO: Add clickable route on title */}
     <Title>{title.toUpperCase()}</Title>
     <Preview>
       {items
