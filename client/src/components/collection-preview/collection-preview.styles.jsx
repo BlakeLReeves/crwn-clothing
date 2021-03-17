@@ -13,6 +13,11 @@ export const CollectionPreviewContainer = styled.div`
 export const Title = styled.h1`
   font-size: 28px;
   margin-bottom: 25px;
+
+  & span:hover {
+    cursor: pointer;
+    color: #626767;
+  }
 `;
 
 export const Preview = styled.div`
